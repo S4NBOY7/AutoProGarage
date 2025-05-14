@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kontak Kami - AutoPro Garage</title>
+    <style>
+      :root {
+        --primary: #c62828;
+        --dark: #1b1b1b;
+        --light: #f8f9fa;
+        --shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+      nav {
+        background-color: var(--dark);
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: var(--shadow);
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: var(--primary);
+      }
+      section {
+        padding: 60px 20px;
+        max-width: 600px;
+        margin: auto;
+        animation: fadeIn 1s ease;
+      }
+      h2 {
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+      form {
+        display: grid;
+        gap: 15px;
+      }
+      form input,
+      form textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1em;
+      }
+      form button {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      form button:hover {
+        background-color: #a91313;
+      }
+      footer {
+        background-color: var(--dark);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <section>
+      <h2>Hubungi Kami</h2>
+      <form>
+        <input type="text" placeholder="Nama Anda" required />
+        <input type="email" placeholder="Email Anda" required />
+        <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2025 AutoPro Garage. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

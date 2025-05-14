@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tentang Kami - AutoPro Garage</title>
+    <style>
+      :root {
+        --primary: #c62828;
+        --dark: #1b1b1b;
+        --light: #f8f9fa;
+        --shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+      nav {
+        background-color: var(--dark);
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: var(--shadow);
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: var(--primary);
+      }
+      section {
+        padding: 60px 20px;
+        max-width: 800px;
+        margin: auto;
+        animation: fadeIn 1s ease;
+      }
+      h2 {
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: var(--dark);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <section>
+      <h2>Tentang Kami</h2>
+      <p>
+        AutoPro Garage didirikan pada tahun 2020 dengan misi memberikan layanan otomotif terbaik di kota ini. Kami berkomitmen
+        untuk memberikan servis berkualitas tinggi dengan harga terjangkau. Tim kami terdiri dari para mekanik profesional yang
+        berpengalaman dan bersertifikat.
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2025 AutoPro Garage. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

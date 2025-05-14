@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>AutoPro Garage</title>
+    <style>
+      :root {
+        --primary: #c62828;
+        --dark: #1b1b1b;
+        --light: #f8f9fa;
+        --shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+      header {
+        background: url("https://img.lovepik.com/bg/20231219/Vibrant-Array-of-Sportscars-Parked-in-a-Colorful-Garage-Setting_2649537_wh1200.jpg") center/cover;
+        height: 80vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        text-shadow: 2px 2px 5px black;
+      }
+      header::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      header .content {
+        position: relative;
+        z-index: 1;
+      }
+      header img.logo {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      nav {
+        background-color: var(--dark);
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: var(--shadow);
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: var(--primary);
+      }
+      section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+        animation: fadeIn 1s ease;
+      }
+      h1,
+      h2 {
+        color: var(--primary);
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      footer {
+        background-color: var(--dark);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <img src="https://media.istockphoto.com/id/1441279805/id/vektor/desain-logo-premium-garasi-mobil-templat-logo-perbaikan-otomotif-dengan-gaya-pedesaan.jpg?s=612x612&w=0&k=20&c=BZtF7cPx56WO4hX-38y2o7Z9O8nBJkcZG969z2DGy_g=" alt="AutoPro Logo" class="logo" />
+        <h1>Selamat Datang di AutoPro Garage</h1>
+        <p>Solusi terbaik untuk perawatan mobil Anda</p>
+      </div>
+    </header>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <section>
+      <h2>Layanan Kami</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Servis Berkala</h3>
+          <p>Perawatan rutin untuk menjaga performa mobil Anda tetap optimal.</p>
+        </div>
+        <div class="card">
+          <h3>Perbaikan Mesin</h3>
+          <p>Diagnosis dan perbaikan menyeluruh untuk berbagai jenis kerusakan mesin.</p>
+        </div>
+        <div class="card">
+          <h3>Cuci Mobil</h3>
+          <p>Layanan cuci mobil lengkap dengan bahan ramah lingkungan.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 AutoPro Garage. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
